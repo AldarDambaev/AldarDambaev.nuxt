@@ -1,0 +1,1 @@
+# AldarDambaev.vue
