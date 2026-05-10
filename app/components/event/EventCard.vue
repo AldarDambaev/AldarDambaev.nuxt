@@ -86,11 +86,7 @@
 
     }
 
-    &__picture:after {
-        content: " ";
-        display: block;
-        padding-top: 107.16%;
-    }
+
 
 
 

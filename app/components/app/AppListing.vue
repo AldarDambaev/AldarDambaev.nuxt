@@ -30,6 +30,38 @@
 
 <style lang="less">
   .app-listing {
-    /* Стили добавьте самостоятельно */
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @media @bw1340 {
+      padding: 0 30px;
+    }
+
+    @media @bw768 {
+      padding: 0 20px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 58px;
+      justify-content: center;
+      margin-bottom: 130px;
+
+      @media @bw1660 {
+        gap: 40px;
+      }
+
+      @media @bw768 {
+        gap: 30px;
+        margin-bottom: 80px;
+      }
+    }
+
+
+  
   }
 </style>
