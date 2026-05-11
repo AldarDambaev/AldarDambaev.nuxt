@@ -62,7 +62,7 @@
             .event-card__title{
                 color: #bc3324;
                 text-decoration-color: #bc3324;
-                text-decoration: underline ;
+                text-decoration: underline ; 
             }
         }
     }
@@ -75,6 +75,7 @@
         font-size: 24px;
         line-height: 1.375;
         transition: color 0.2s, text-decoration-color 0.2s;
+        text-decoration: none;
     }
 
     &__picture{
@@ -92,6 +93,7 @@
 
     &__description{
         margin: 0 0 15px;
+        text-decoration: none;
     }
 
   }
