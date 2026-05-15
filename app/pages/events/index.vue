@@ -1,6 +1,12 @@
 <template>
   <div class="events">
-    <AppListing title="Мероприятия" class="events__listing">
+    <AppListing 
+    v-slot="{list}" 
+    :title="Мероприятия" 
+    class="events__listing"
+    :moreBtn="true"
+    :url="'http://localhost:3000/json/events.json'"
+    >
       <EventCard
         v-for="(card, index) in list"
         :key="index"
@@ -12,14 +18,7 @@
 </template>
 
 <script setup>
-  const list = ref([]);
 
-  const URL = "http://localhost:3000/json/events.json";
-
-  const { data } = await useAsyncData(`events`, () => {
-    return $fetch(URL);
-  });
-  if (data?.value) list.value = data.value;
 </script>
 
 <style lang="less">
