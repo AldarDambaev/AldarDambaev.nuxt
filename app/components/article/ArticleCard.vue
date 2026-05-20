@@ -17,7 +17,7 @@
 
       <source media="(max-width: 1169px)" :srcset="data.img_tablet" />
 
-      <source type="image/webp" srcset="data.img_webp" />
+      <source type="image/webp" :srcset="data.img_webp" />
 
       <img :src="data.img" :alt="data.alt" class="article-card__img" />
     </picture>
